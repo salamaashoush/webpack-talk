@@ -1,0 +1,40 @@
+.app{
+  background: url('./background.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.content{
+  font-family: sans-serif;
+  margin: auto;
+  text-align: center;
+  background: rgba(106, 238, 255, 0.3);
+  width: 100vw;
+  height: 100vh;
+  font-size: 3em;
+  color: white;
+  display: flex;
+}
+
+.logo{
+  width: 10%;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+
+.message{
+  margin: auto;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+}
+.js{
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px;
+  background: yellow;
+  color:black;
+  text-shadow: none;
+}

@@ -1,0 +1,16 @@
+.env
+yarn.lock
+node_modules
+dist
+.DS_Store
+.vscode
+Thumbs
+._*
+package-lock.json
+yarn-error.log
+node_modules/
+*npm-debug.log
+*.DS_Store
+.idea/*
+.idea
+.vagrant
