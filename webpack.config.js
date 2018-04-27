@@ -1,7 +1,10 @@
-const commonConfig = require('./build-utils/webpack.common');
-const webpackMerge = require('webpack-merge');
-
-module.exports = ({ env }) => {
-  const envConfig = require(`./build-utils/webpack.${env}.js`);
-  return webpackMerge(commonConfig, envConfig);
+/* eslint-disable */
+const commonConfig = require("./build-utils/webpack.common");
+const webpackMerge = require("webpack-merge");
+const envs = {
+  development: "dev",
+  production: "prod"
 };
+const env = envs[process.env.NODE_ENV || "development"];
+const envConfig = require(`./build-utils/webpack.${env}.js`);
+module.exports = webpackMerge(commonConfig, envConfig);

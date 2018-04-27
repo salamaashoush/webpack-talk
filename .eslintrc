@@ -1,19 +1,23 @@
 {
-  "extends": [
-    "airbnb"
-  ],
   "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 2016,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "plugins": ["prettier", "babel"],
   "env": {
     "es6": true,
     "jest": true,
     "browser": true,
     "node": true
+  },
+  "rules":{
+   "import/prefer-default-export": 0,
+   "no-param-reassign": 0,
+   "import/no-unresolved": 0
+  },
+  "settings":{
+    "import/resolver":{
+      "webpack":{
+        "config": "webpack.config.js"
+      }
+    }
   }
 }

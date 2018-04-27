@@ -1,22 +1,19 @@
-const commonPaths = require('./common-paths');
+const webpack = require("webpack");
+const commonPaths = require("./common-paths");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   output: {
-    filename: '[name].js',
-    path: commonPaths.outputPath,
-    chunkFilename: '[name].js',
+    filename: "[name].js",
+    path: commonPaths.outPath,
+    chunkFilename: "[name].js"
   },
   module: {
     rules: [
       {
         test: /\.(css|scss)$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-    ],
-  },
+        use: ["style-loader", "css-loader", "sass-loader"]
+      }
+    ]
+  }
 };

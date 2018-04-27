@@ -1,7 +1,8 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  outPath: path.resolve(__dirname, '../', 'dist'),
-  entryPath: path.resolve(__dirname, '../', 'src/index.jsx'),
-
+  root: path.resolve(__dirname, "../"),
+  outPath: path.resolve(__dirname, "../", "dist"),
+  entryPath: path.resolve(__dirname, "../", "src/index.jsx"),
+  templatePath: path.resolve(__dirname, "../", "src/index.html")
 };
